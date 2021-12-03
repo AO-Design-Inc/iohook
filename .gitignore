@@ -1,12 +1,10 @@
 .idea
 .vscode
 .scratch
-build
 builds
 docs/.vuepress/dist
 logs
 node_modules
-prebuilds
 .env
 *.DS_Store
 *.iml
