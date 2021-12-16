@@ -13,8 +13,8 @@ DEFS_Debug := \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
 	'-DV8_COMPRESS_POINTERS' \
+	'-DV8_COMPRESS_POINTERS_IN_ISOLATE_CAGE' \
 	'-DV8_31BIT_SMIS_ON_64BIT_ARCH' \
-	'-DV8_REVERSE_JSARGS' \
 	'-D__STDC_FORMAT_MACROS' \
 	'-DOPENSSL_NO_PINSHARED' \
 	'-DOPENSSL_THREADS' \
@@ -43,16 +43,16 @@ CFLAGS_C_Debug :=
 CFLAGS_CC_Debug := \
 	-fno-rtti \
 	-fno-exceptions \
-	-std=gnu++14
+	-std=gnu++17
 
 INCS_Debug := \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/include/node \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/src \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/deps/openssl/config \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/deps/openssl/openssl/include \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/deps/uv/include \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/deps/zlib \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/deps/v8/include \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/include/node \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/src \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/deps/openssl/config \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/deps/openssl/openssl/include \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/deps/uv/include \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/deps/zlib \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/deps/v8/include \
 	-I$(srcdir)/node_modules/nan \
 	-I$(srcdir)/libuiohook/include \
 	-I$(srcdir)/libuiohook/src
@@ -68,8 +68,8 @@ DEFS_Release := \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
 	'-DV8_COMPRESS_POINTERS' \
+	'-DV8_COMPRESS_POINTERS_IN_ISOLATE_CAGE' \
 	'-DV8_31BIT_SMIS_ON_64BIT_ARCH' \
-	'-DV8_REVERSE_JSARGS' \
 	'-D__STDC_FORMAT_MACROS' \
 	'-DOPENSSL_NO_PINSHARED' \
 	'-DOPENSSL_THREADS' \
@@ -95,16 +95,16 @@ CFLAGS_C_Release :=
 CFLAGS_CC_Release := \
 	-fno-rtti \
 	-fno-exceptions \
-	-std=gnu++14
+	-std=gnu++17
 
 INCS_Release := \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/include/node \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/src \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/deps/openssl/config \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/deps/openssl/openssl/include \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/deps/uv/include \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/deps/zlib \
-	-I/home/gitpod/.cache/node-gyp/15.0.0/deps/v8/include \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/include/node \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/src \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/deps/openssl/config \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/deps/openssl/openssl/include \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/deps/uv/include \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/deps/zlib \
+	-I/home/abhishek/.cache/node-gyp/17.1.0/deps/v8/include \
 	-I$(srcdir)/node_modules/nan \
 	-I$(srcdir)/libuiohook/include \
 	-I$(srcdir)/libuiohook/src
@@ -151,8 +151,8 @@ LDFLAGS_Release := \
 	-m64
 
 LIBS := \
-	-Wl,-rpath,builds/electron-v98-linux-x64/build/Release \
-	-Wl,-rpath,/workspace/iohook/build/Release/ \
+	-Wl,-rpath,builds/node-v102-linux-x64/build/Release \
+	-Wl,-rpath,/home/abhishek/workbench/iohook/build/Release/ \
 	-lX11 \
 	-lX11-xcb \
 	-lxkbcommon-x11 \
