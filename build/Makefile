@@ -314,7 +314,7 @@ endif
 
 quiet_cmd_regen_makefile = ACTION Regenerating $@
 cmd_regen_makefile = cd $(srcdir); /home/abhishek/workbench/iohook/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/home/abhishek/.cache/node-gyp/17.1.0" "-Dnode_gyp_dir=/home/abhishek/workbench/iohook/node_modules/node-gyp" "-Dnode_lib_file=/home/abhishek/.cache/node-gyp/17.1.0/<(target_arch)/node.lib" "-Dmodule_root_dir=/home/abhishek/workbench/iohook" "-Dnode_engine=v8" "--depth=." "-Goutput_dir=." "--generator-output=build" -I/home/abhishek/workbench/iohook/build/config.gypi -I/home/abhishek/workbench/iohook/node_modules/node-gyp/addon.gypi -I/home/abhishek/.cache/node-gyp/17.1.0/include/node/common.gypi "--toplevel-dir=." binding.gyp
-Makefile: $(srcdir)/uiohook.gyp $(srcdir)/binding.gyp $(srcdir)/build/config.gypi $(srcdir)/node_modules/node-gyp/addon.gypi $(srcdir)/../../.cache/node-gyp/17.1.0/include/node/common.gypi
+Makefile: $(srcdir)/node_modules/node-gyp/addon.gypi $(srcdir)/../../.cache/node-gyp/17.1.0/include/node/common.gypi $(srcdir)/binding.gyp $(srcdir)/uiohook.gyp $(srcdir)/build/config.gypi
 	$(call do_cmd,regen_makefile)
 
 # "all" is a concatenation of the "all" targets from all the included
