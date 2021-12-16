@@ -15,7 +15,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "install": "node build.js --upload=false",
+    "install": "node install.js",
     "build": "node build.js --upload=false",
     "build:ci": "node build.js --all",
     "build:print": "node -e 'require(\"./helpers\").printManualBuildParams()'",
@@ -68,7 +68,6 @@
   },
   "devDependencies": {
     "@types/node": "^7.0.62",
-    "electron-rebuild": "^3.2.5",
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-only-warn": "^1.0.2",
@@ -182,3 +181,4 @@
     ]
   ]
 }
+
