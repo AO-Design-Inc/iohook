@@ -2,6 +2,9 @@
 .vscode
 .scratch
 builds
+build
+prebuilds
+patch*
 docs/.vuepress/dist
 logs
 node_modules
