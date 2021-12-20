@@ -16,7 +16,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-  "install": "npm run build",
+  "install": "npm i && npm run build",
     "build": "node build.js --upload=false",
     "build:ci": "node build.js --all",
     "build:print": "node -e 'require(\"./helpers\").printManualBuildParams()'",
